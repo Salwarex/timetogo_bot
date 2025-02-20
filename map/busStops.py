@@ -6,6 +6,8 @@ from selenium.webdriver.chrome.options import Options
 
 import time
 
+import config
+
 
 class ScheduleForCheckpoints:
     def __init__(self, url, route, stopname, direction=0):
@@ -78,4 +80,4 @@ class ScheduleForCheckpoints:
             driver.quit()
 
 if __name__ == '__main__':
-    ScheduleForCheckpoints("", "", "").parse_schedule()
+    ScheduleForCheckpoints(config.URL, "", "").parse_schedule()

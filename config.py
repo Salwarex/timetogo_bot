@@ -1,0 +1,2 @@
+TOKEN_API = ''
+DEBUGMODE = True
